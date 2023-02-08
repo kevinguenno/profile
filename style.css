@@ -38,10 +38,7 @@ button:hover{
 
 .card {
   background: white;
-  margin-left: 200px;
-  margin-right: 200px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 30px;
   padding: 30px;
   border: 1px solid lightgrey;
   border-radius: 10px;
@@ -80,11 +77,19 @@ i:hover{
   .container {
     width: 500px;
   }
+  .img-circle {
+    border-radius: 50%;
+    width: 200px;
+  }
 }
 
 @media (max-width: 540px) {
   /* Pour un écran < 540px, cette classe CSS s'applique */
   .container {
     width: 300px;
+  }
+  .img-circle {
+    border-radius: 50%;
+    width: 150px;
   }
 }
