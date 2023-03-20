@@ -1,5 +1,5 @@
 body {
-  background-color:#c0cf75;
+  background-color: #048A81;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,27 +13,52 @@ a{
   font-size: large;
 }
 
-button{
-  width:100px;
-  height:50px;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+i{
+  font-size: 30px;
+  text-decoration:none;
+  margin-inline: 50px;
 }
 
-button:hover{
-  color: red;
-  transition: 0.3s;
+.social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .container {
-  width: 900px;
+#Github{
+  color:#333333;
+}
+
+#FB{
+  color:#3b5998;
+}
+#Viadeo{
+  color:#ec7500;
+}
+
+#Linkedin{
+  color:#0072b1;
+}
+
+i:hover{
+  transition: 0.9s;
+  transform: rotate(180deg);
+}
+
+.container {
+  max-width: 700px;
   margin: 0 auto;
-} */
+}
 
 .img-circle {
   border-radius: 50%;
-  width: 300px;
+  width: 200px;
+  margin-inline: 25px;
+}
+
+.center-card{
+  display: flex;
+  align-items: center;
 }
 
 .card {
@@ -42,27 +67,11 @@ button:hover{
   padding: 30px;
   border: 1px solid lightgrey;
   border-radius: 10px;
-  text-align: center;
   box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
 }
 
-.list-inline > li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-
-.list-inline {
-  list-style: none;
-  padding-left: 0px;
-}
-
 body {
-  background-image: url('image/83bac240.jpg');
-}
-
-i:hover{
-  transition: 0.9s;
-  transform: rotate(180deg);
+  background-image: url('');
 }
 
 @media (max-width: 960px) {
