@@ -10,7 +10,7 @@ h1, h2{
 
 a{
   text-decoration:none;
-  font-size: large;
+  font-size: 15px;
 }
 
 i{
@@ -73,6 +73,42 @@ i:hover{
 body {
   background-image: url('');
 }
+
+.card-product {
+  overflow: hidden;
+  height: 130px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  margin-block: 30px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-product h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
 
 @media (max-width: 960px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
