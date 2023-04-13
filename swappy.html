@@ -8,112 +8,147 @@
     <link rel="stylesheet" href="swappy.css">
   </head>
   <body>
-    <h3>Exeptions</h3>
-    <div class="card-img">
-      <img src="image/swappy/landing_page.png" alt="exeptions home-page">
-      <div class="text">
-        <p>Landing page.</p>
-        <p>Il est possible dès cette page de se loguer et/ou de se créer un compte. Cependant cela n'est pas nécessaire pour accéder à l'index et à la show des châteaux.</p>
-        <p>La partie sign in / sign up est géré avec Devise</p>
+    <div class="container">
+      <div class="card-title">
+        <h2>Swappy</h2>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/categories_selection.png" alt="exeptions index-renters">
-      <div class="text">
-        <p>Index des châteaux en location.</p>
-        <p>Quelques informations sont visibles sur les cartes avec pour fond une photo du château en question.</p>
-        <p>Lorsque la souris passe sur la carte d'un château, la photo se réduit quelque peu pour rendre les informations plus visibles.</p>
+      <div class="card-img">
+        <img src="image/swappy/landing_page.png" alt="swappy home-page">
+        <div class="text">
+          <h3>Landing page</h3>
+          <p>Au clic sur le bouton "Begin", l'application vous envoie sur la page de log. En effet il est nécessaire d'être enregistrer pour utiliser cette application.</p>
+          <p>La partie sign in / sign up est géré avec Devise</p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/index_activities.png" alt="exeptions show-renters">
-      <div class="text">
-        <p>Show du château en location.</p>
-        <p>Cette page présente plus en détail le château avec notamment l'avis d'un précédent utilisateur, la présentation du propriétaire du château et une carte permettant de situer le château.</p>
-        <p>La parti de droite permet de choisir les dates d'entrée et de sortie. La facture se met à jour automatiquement sans rechargement de la page grâce à un controlleur javascript.</p>
-        <p>Au clic sur le bouton réserver, le site demande à se connecter en tant qu'utilisateur ou à se créer un compte.</p>
+      <div class="card-img">
+        <img src="image/swappy/categories_selection.png" alt="swappy category-choice">
+        <div class="text">
+          <h3>Page de choix</h3>
+          <p>A ce stade, l'utilisateur est amené à choisir d'une part une ville et le rayon de la zone dans laquelle vous souhaiter trouver des activités.</p>
+          <p>D'autre part la ou les catégories d'activités que vous voulez passer en revu.</p>
+          <p>Vous avez le choix entre 9 catégories :</p>
+          <ul>
+            <li><p>Restaurant</p></li>
+            <li><p>Sport</p></li>
+            <li><p>Culture</p></li>
+            <li><p>Cinéma / film</p></li>
+            <li><p>Soirée</p></li>
+            <li><p>Activité en famille</p></li>
+            <li><p>Activité culinaire (recettes en tout genre)</p></li>
+            <li><p>Activité artistique</p></li>
+            <li><p>Livre / BD</p></li>
+          </ul>
+          <p>Au clic sur le bouton "Confirm", l'apilcation vous envoie sur l'index des activités correspondant à vos choix"</p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/show_activities.png" alt="exeptions index-bookings">
-      <div class="text">
-        <p>Index des réservations coté "renter".</p>
-        <p>L'utilisateur est maintenant connecté.</p>
-        <p>L'ensemble de ses réservations à venir sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation par le propriétaire.</p>
+      <div class="card-img">
+        <img src="image/swappy/index_activities.png" alt="swappy index-activities">
+        <div class="text">
+          <h3>Index des activités</h3>
+          <p>Cet index est particulier car il affiche les activités une par une. Un controlleur Javascript permet de masquer toutes les activités sauf la première de la liste.</p>
+          <p>A ce stade nous avons quelques information sur l'activité : le temps qu'il faut prévoir, une fourchette de prix indiqué par un nombre de pictogramme "€" et l'adresse.</p>
+          <p>Les 4 boutons du bas permettent de gauche à droite de :
+            <ul>
+              <li><p>visualiser les détails de l'activité (renvoie sur la show de l'activité)</p></li>
+              <li><p>rejeter l'activité</p></li>
+              <li><p>mettre l'activité dans les favoris</p></li>
+              <li><p>inviter des amis à participer à l'activité mais nous y reviondrons plus tard</p></li>
+            </ul>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/swipe.png" alt="exeptions index-owners">
-      <div class="text">
-        <p>Index des réservations côté "owner".</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>L'ensemble des demandes de réservations qu'on lui a fait sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation.</p>
+      <div class="card-img">
+        <img src="image/swappy/show_activities.png" alt="swappy show-activities">
+        <div class="text">
+          <h3>Show de l'activité</h3>
+          <p>Nous retrouvons ici les informations de l'activité. En plus de celles déjà présentent sur l'index, nous retrouvons une description précise de l'activité et une indication du public possible.</p>
+          <p>Tout comme dans l'index, les 4 boutons du bas permettent de gauche à droite de :
+            <ul>
+                <li><p>retourner sur l'index</p></li>
+                <li><p>rejeter l'activité</p></li>
+                <li><p>mettre l'activité dans les favoris</p></li>
+                <li><p>inviter des amis à participer à l'activité mais nous y reviondrons plus tard</p></li>
+            </ul>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/index_favorites.png" alt="exeptions new-owners">
-      <div class="text">
-        <p>Formulaire pour mettre un château en location.</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>Le formulaire invite l'utilisateur en renseigner l'ensembles des données permettant de mettre son château en location.</p>
-        <p>L'ajout de photo en ligne est géré avec le SaaS Cloudinary.</p>
-        <p>Au clic sur le bouton "Create Castle", l'utilisateur est renvoyé sur la show du château qu'il vient d'ajouter.</p>
+      <div class="card-img">
+        <img src="image/swappy/swipe.png" alt="swappy swipe-activities">
+        <div class="text">
+          <p>Petit focus sur le fait que l'utilisateur peut rejeter et ajouter l'activité dans les favoris de deux façons, soit avec les boutons "croix" et "coeur", soit en swipant à gauche ou à droite.</p>
+          <p>Nous avons utiliser la librairie Hammer.js pour détecter les évenements lié aux écrans tactiles.</p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/new_group.png" alt="exeptions index-owners">
-      <div class="text">
-        <p>Index des réservations côté "owner".</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>L'ensemble des demandes de réservations qu'on lui a fait sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation.</p>
+      <div class="card-img">
+        <img src="image/swappy/index_favorites.png" alt="swappy index-favorites">
+        <div class="text">
+          <h3>Index des favoris</h3>
+          <p>Sur cette page, l'utilisateur retrouve toutes les activités qu'il a "liker".</p>
+          <p>Au clic sur le bouton "...", deux boutons se dévoile. Le premier permet de supprimer l'activité des favoris. Le second permet d'inviter des amis à participer à l'activité.</p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/invite_friends.png" alt="exeptions index-owners">
-      <div class="text">
-        <p>Index des réservations côté "owner".</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>L'ensemble des demandes de réservations qu'on lui a fait sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation.</p>
+      <div class="card-img">
+        <img src="image/swappy/new_group.png" alt="swappy new-group">
+        <div class="text">
+          <h3>Page de création du groupe</h3>
+          <p>L'utilisateur est invité à choisir un nom pour le groupe qu'il est en train de créer.</p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/chat_room.png" alt="exeptions index-owners">
-      <div class="text">
-        <p>Index des réservations côté "owner".</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>L'ensemble des demandes de réservations qu'on lui a fait sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation.</p>
+      <div class="card-img">
+        <img src="image/swappy/invite_friends.png" alt="swappy invite-friends">
+        <div class="text">
+          <h3>Page d'invitation</h3>
+          <p>L'utilisateur peut mainenant sélectionner les personnes qu'il souhaite voir participer à l'activiter avec lui.</p>
+          <p>Au clic sur le bouton "Invite", l'utilisateur est envoyé sur la chat-room lié à ce groupe.</p>
+          <p>Les personnes invitées voient le groupe se créer également sur leur application.</p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/index_group_organisator.png" alt="exeptions index-owners">
-      <div class="text">
-        <p>Index des réservations côté "owner".</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>L'ensemble des demandes de réservations qu'on lui a fait sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation.</p>
+      <div class="card-img">
+        <img src="image/swappy/chat_room.png" alt="swappy chat-room">
+        <div class="text">
+          <h3>La chat-room</h3>
+          <p>Les utilisateurs peuvent ici converser pour se mettre d'accord sur le devenir de l'activité.</p>
+          <p>L'organisateur peut à tout moment inviter des personnes supplémentaires en cliquant sur le crayon à droite du nom du groupe.</p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/chat_room_2.png" alt="exeptions index-owners">
-      <div class="text">
-        <p>Index des réservations côté "owner".</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>L'ensemble des demandes de réservations qu'on lui a fait sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation.</p>
+      <div class="card-img">
+        <img src="image/swappy/index_group_organisator.png" alt="swappy index-group-organisator">
+        <div class="text">
+          <h3>Index des groupes</h3>
+          <p>Sur cette page l'utilisateur visualise l'ensemble des groupes auquels il participe. Aussi bien ceux dont il est l'initiateur que ceux où il est invité.</p>
+          <p>Pour les groupes qu'il a initié, l'utilisateur a la possibilité de supprimer le groupe, de marquer l'activité comme "faite" ou de modifier le groupe (changer le nom, inviter d'autres personnes".</p>
+          <p>Pour les groupes dont il est simple invité, un point d'interrogation montre que l'aplication attent une action de sa part. </p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/index_groups_guest.png" alt="exeptions index-owners">
-      <div class="text">
-        <p>Index des réservations côté "owner".</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>L'ensemble des demandes de réservations qu'on lui a fait sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation.</p>
+      <div class="card-img">
+        <img src="image/swappy/chat_room_2.png" alt="swappy chat-room-2">
+        <div class="text">
+          <h3>Chat-room</h3>
+          <p>L'utilisateur n'est pas interéssé par l'activité et le signifie à ses amis dans la chat room.</p>
+        </div>
       </div>
-    </div>
-    <div class="card-img">
-      <img src="image/swappy/historic.png" alt="exeptions index-owners">
-      <div class="text">
-        <p>Index des réservations côté "owner".</p>
-        <p>L'utilisateur est connecté.</p>
-        <p>L'ensemble des demandes de réservations qu'on lui a fait sont regroupées sur cette page. Nous pouvons voir que la dernière réservation est en attente de validation.</p>
+      <div class="card-img">
+        <img src="image/swappy/index_groups_guest.png" alt="swappy index-group-guest">
+        <div class="text">
+          <h3>Index des groupes</h3>
+          <p>L'utilisateur clique alors sur le point d'interrogation.</p>
+          <p>Deux boutons apparaissent. Le pouce vers le haut pour accepter l'invitation, le pouce vers le bas pour décliner l'invitation. Le groupe de discussion se supprime alors de l'application de l'utilisateur, évitant ainsi les groupes de conversations fantômes.</p>
+        </div>
+      </div>
+      <div class="card-img">
+        <img src="image/swappy/historic.png" alt="swappy historic">
+        <div class="text">
+          <h3>Historiques des activités</h3>
+          <p>L'utilisateur visualise ici les activités qu'il a marqué comme "faites".</p>
+          <p>Il peut grâce au bouton "undo", réactiver le groupe de discussion si il veut refaire l'activité.</p>
+          <p>La navbar situé en bas de l'écran permet à tout moment à l'utilisateur de retourner sur les pages principales de l'application. A savoir de gauche à droite :</p>
+          <ul>
+            <li><p>page des choix</p></li>
+            <li><p>index des activités / swipe</p></li>
+            <li><p>index des favoris</p></li>
+            <li><p>index des groupes</p></li>
+            <li><p>historique</p></li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
